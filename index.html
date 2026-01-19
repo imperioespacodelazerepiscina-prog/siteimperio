@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Espaço Império | Casa de Piscina para Eventos</title>
+  <meta name="description" content="Espaço Império é um espaço completo para festas e eventos. Piscina iluminada, churrasqueira, som, TV 80”, área infantil e muito mais.">
+  <meta name="keywords" content="espaço para eventos, casa de piscina, festas, aniversários, eventos corporativos">
+  <meta name="author" content="Espaço Império">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <button id="topo">⬆</button>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<!-- ================= BOTÃO FLUTUANTE WHATSAPP ================= -->
+<a href="https://wa.me/5511992168849" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Falar no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <img src="logo/logo.png" alt="Espaço Império" class="logo">
+  <button id="darkToggle">🌙</button>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero reveal">
+  <h1>O ESPAÇO IDEAL PARA O SEU EVENTO</h1>
+  <p>Aniversários, confraternizações, eventos corporativos e comemorações<br> em geral em um ambiente completo e sofisticado.</p>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="about reveal">
+  <h2>SOBRE O ESPAÇO IMPÉRIO</h2>
+  <p>O Espaço Império foi projetado para oferecer conforto, lazer e praticidade em um único lugar. Um ambiente moderno, seguro e funcional, perfeito para receber seus convidados.</p>
+  <p>Nossa estrutura atende eventos de diferentes portes, garantindo diversão para adultos e crianças, além de comodidade para quem organiza.</p>
+</section>
+
+<!-- ================= ESTRUTURA ================= -->
+<section class="features reveal">
+  <h2>NOSSA ESTRUTURA</h2>
+  <div class="features-grid">
+    <div class="feature"><h3>Piscina Completa</h3><p>Piscina com iluminação, hidromassagem, cascata e prainha rasa ideal para crianças.</p></div>
+    <div class="feature"><h3>Área Externa</h3><p>Chuveirão externo, bangalô de madeira e amplo espaço para circulação.</p></div>
+    <div class="feature"><h3>Área Infantil</h3><p>Brinquedos para crianças e ambiente seguro para os pequenos se divertirem.</p></div>
+    <div class="feature"><h3>Mobiliário</h3><p>Mesas e cadeiras para até 60 pessoas, oferecendo conforto aos convidados.</p></div>
+    <div class="feature"><h3>Cozinha & Churrasqueira</h3><p>Cozinha completa e churrasqueira equipada, ideal para festas e confraternizações.</p></div>
+    <div class="feature"><h3>Som & Multimídia</h3><p>Sistema de som fixo, 2 microfones e TV de 80” para karaokê e apresentações.</p></div>
+    <div class="feature"><h3>Sala Privativa</h3><p>Sala reservada com sofá, TV, chiqueirinho e trocador para bebês.</p></div>
+    <div class="feature"><h3>Banheiros</h3><p>Banheiros masculino, feminino, acessível e vestiário com chuveiro quente.</p></div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section class="gallery reveal">
+  <h2>GALERIA DE FOTOS</h2>
+  <p class="gallery-text">Conheça melhor nosso espaço pelas imagens abaixo.</p>
+  <div class="grid">
+    <img src="images/piscinaclara.jpeg" class="gallery-img" data-index="0">
+    <img src="images/areagourmet.jpeg" class="gallery-img" data-index="1">
+    <img src="images/microfone.jpeg" class="gallery-img" data-index="2">
+    <img src="images/halldeentrada.jpeg" class="gallery-img" data-index="3">
+    <img src="images/tabuas.jpeg" class="gallery-img" data-index="4">
+    <img src="images/piscina.jpeg" class="gallery-img" data-index="5">
+    <img src="images/gourmet.jpeg" class="gallery-img" data-index="6">
+    <img src="images/piscinaescura.jpeg" class="gallery-img" data-index="7">
+    <img src="images/visãoaerea.png" class="gallery-img" data-index="8">
+    <img src="images/evento.jpeg" class="gallery-img" data-index="9">
+    <img src="images/cascata.jpeg" class="gallery-img" data-index="10">
+    <img src="images/estrutura.jpeg" class="gallery-img" data-index="11">
+  </div>
+</section>
+
+<!-- MODAL PARA GALERIA -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <span class="arrow left">&#10094;</span>
+  <img class="modal-content" id="modal-img">
+  <span class="arrow right">&#10095;</span>
+  <div id="caption"></div>
+</div>
+
+<!-- ================= IDEAL PARA ================= -->
+<section class="audience reveal">
+
+  <div class="audience-container">
+    
+    <!-- TEXTO -->
+    <div class="audience-text">
+      <h2>IDEAL PARA</h2>
+      <ul>
+        <li>Aniversários infantis e adultos</li>
+        <li>Confraternizações familiares</li>
+        <li>Eventos corporativos</li>
+        <li>Churrascos e encontros entre amigos</li>
+        <li>Datas comemorativas especiais</li>
+      </ul>
+    </div>
+
+    <!-- VÍDEO -->
+    <div class="audience-video">
+      <video controls muted playsinline>
+        <source src="videos/video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="about reveal">
+  <h2>COMO FUNCIONA A LOCAÇÃO</h2>
+  <p>A locação do Espaço Império é feita mediante disponibilidade de data.<br> 
+    Entre em contato, consulte valores e garanta sua reserva.</p>
+  <p>Nosso objetivo é oferecer uma experiência completa, com estrutura<br> pronta para você apenas chegar e aproveitar.</p>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq reveal">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">1. Qual a capacidade máxima?</button>
+    <div class="faq-answer">O recomendado é até 60 pessoas, porém em questão de espaço o limite é 70 a 80.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">2. O espaço tem estacionamento?</button>
+    <div class="faq-answer">Não temos um estacionamento próprio, mas a rua é espaçosa e costuma ter bastante vagas.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">3. É permitido animais de estimação?</button>
+    <div class="faq-answer">Sim, desde que tenha um aviso prévio.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">4. Posso levar meu próprio buffet?</button>
+    <div class="faq-answer">Sim, é permitido trazer buffet externo e sua própria comida.</div>
+  </div>
+
+  <div class="faq-item">
+  <button class="faq-question">5. Qual a política de cancelamento?</button>
+  <div class="faq-answer">
+    Cancelamentos realizados com até 15 dias de antecedência ao evento terão reembolso de 50% do valor pago.
+    <br>
+    Em casos de reserva com pagamento de 30% de sinal, este valor não é reembolsável em nenhuma hipótese,
+    sendo considerado como compensação pela data bloqueada.
+  </div>
+</div>
+
+  <div class="faq-item">
+    <button class="faq-question">6. Existe música ao vivo?</button>
+    <div class="faq-answer">Existe, desde que seu evento tenha músicos externos e que eles tragam os devidos equipamentos.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">7. O espaço possui segurança?</button>
+    <div class="faq-answer">Não, dentro do espaço só fica quem alugou e seus convidados.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">8. Existe acessibilidade?</button>
+    <div class="faq-answer">Sim, banheiros adaptados e rampas de acesso ao espaço estão disponíveis.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">9. Posso usar decoração própria?</button>
+    <div class="faq-answer">Sim, decorações personalizadas são permitidas com aviso prévio.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">10. O horário de término é flexível?</button>
+    <div class="faq-answer">Não, principalmente por questões com a vizinhaça e segurança.</div>
+  </div>
+</section>
+
+<!-- ================= SIMULADOR ================= -->
+<section class="simulator reveal">
+  <h2>SIMULADOR DE EVENTO</h2>
+  <p>Descubra se o Espaço Império é perfeito para o seu evento!</p>
+
+  <div class="simulator-box">
+    <label>
+      Tipo de evento:
+      <select id="tipoEvento">
+        <option value="">Selecione</option>
+        <option value="aniversario">Aniversário</option>
+        <option value="confraternizacao">Confraternização</option>
+        <option value="corporativo">Evento corporativo</option>
+        <option value="churrasco">Churrasco</option>
+      </select>
+    </label>
+
+    <label>
+      Quantidade de convidados:
+      <input type="number" id="convidados" min="1" max="80" placeholder="Ex: 20">
+    </label>
+
+    <label>
+      Data do evento:
+      <input type="date" id="dataEvento">
+    </label>
+
+    <button id="simular">Simular Evento</button>
+
+    <div id="resultadoSimulador"></div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="contact reveal">
+  <h2>ENTRE EM CONTATO</h2>
+  <p>Garanta sua data e venha realizar seu evento no Espaço Império.</p>
+  <a href="https://wa.me/5511992168849" target="_blank" class="btn">
+    Falar no WhatsApp
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>
+    <span>Rua Coronel Drago, 1A - Jardim Penha São Paulo - SP, 03757-030</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>imperioespacodelazerepiscina@gmail.com</span>
+  </p>
+  <br>
+  <p>© Espaço Império - Todos os direitos reservados</p>
+</footer>
+

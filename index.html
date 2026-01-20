@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="style.css">
   <button id="topo">⬆</button>
   <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -25,25 +24,37 @@
 
 <!-- ================= HEADER ================= -->
 <header class="header">
-  <img src="logo.png" alt="Espaço Império" class="logo">
+  <img src="logo/logo.png" alt="Espaço Império" class="logo">
+    <!-- MENU DE NAVEGAÇÃO -->
+  <nav class="menu">
+  <a href="#inicio">Início</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#estrutura">Estrutura</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#ideal">Ideal Para</a>
+  <a href="#como-funciona">Como funciona</a>
+  <a href="#faq">FAQ</a>
+  <a href="#simulador">Simulador</a>
+  <a href="#contato">Contato</a>
+</nav>
   <button id="darkToggle">🌙</button>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero reveal">
+<section id="inicio" class="hero reveal">
   <h1>O ESPAÇO IDEAL PARA O SEU EVENTO</h1>
   <p>Aniversários, confraternizações, eventos corporativos e comemorações<br> em geral em um ambiente completo e sofisticado.</p>
 </section>
 
 <!-- ================= SOBRE ================= -->
-<section class="about reveal">
+<section id="sobre" class="about reveal">
   <h2>SOBRE O ESPAÇO IMPÉRIO</h2>
-  <p>O Espaço Império foi projetado para oferecer conforto, lazer e praticidade em um único lugar. Um ambiente moderno, seguro e funcional, perfeito para receber seus convidados.</p>
+  <p>O Espaço Império localizado na R. Cel. Drago, 1A - Jardim Penha, foi projetado para oferecer conforto, lazer e praticidade em um único lugar. Um ambiente moderno, seguro e funcional, perfeito para receber seus convidados.</p>
   <p>Nossa estrutura atende eventos de diferentes portes, garantindo diversão para adultos e crianças, além de comodidade para quem organiza.</p>
 </section>
 
 <!-- ================= ESTRUTURA ================= -->
-<section class="features reveal">
+<section id="estrutura" class="features reveal">
   <h2>NOSSA ESTRUTURA</h2>
   <div class="features-grid">
     <div class="feature"><h3>Piscina Completa</h3><p>Piscina com iluminação, hidromassagem, cascata e prainha rasa ideal para crianças.</p></div>
@@ -58,22 +69,22 @@
 </section>
 
 <!-- ================= GALERIA ================= -->
-<section class="gallery reveal">
+<section id="galeria" class="gallery reveal">
   <h2>GALERIA DE FOTOS</h2>
   <p class="gallery-text">Conheça melhor nosso espaço pelas imagens abaixo.</p>
   <div class="grid">
-    <img src="piscinaclara.jpeg" class="gallery-img" data-index="0">
-    <img src="areagourmet.jpeg" class="gallery-img" data-index="1">
-    <img src="microfone.jpeg" class="gallery-img" data-index="2">
-    <img src="halldeentrada.jpeg" class="gallery-img" data-index="3">
-    <img src="tabuas.jpeg" class="gallery-img" data-index="4">
-    <img src="piscina.jpeg" class="gallery-img" data-index="5">
-    <img src="gourmet.jpeg" class="gallery-img" data-index="6">
-    <img src="piscinaescura.jpeg" class="gallery-img" data-index="7">
-    <img src="visãoaerea.png" class="gallery-img" data-index="8">
-    <img src="evento.jpeg" class="gallery-img" data-index="9">
-    <img src="cascata.jpeg" class="gallery-img" data-index="10">
-    <img src="estrutura.jpeg" class="gallery-img" data-index="11">
+    <img src="images/piscinaclara.jpeg" class="gallery-img" data-index="0">
+    <img src="images/areagourmet.jpeg" class="gallery-img" data-index="1">
+    <img src="images/microfone.jpeg" class="gallery-img" data-index="2">
+    <img src="images/halldeentrada.jpeg" class="gallery-img" data-index="3">
+    <img src="images/tabuas.jpeg" class="gallery-img" data-index="4">
+    <img src="images/piscina.jpeg" class="gallery-img" data-index="5">
+    <img src="images/gourmet.jpeg" class="gallery-img" data-index="6">
+    <img src="images/piscinaescura.jpeg" class="gallery-img" data-index="7">
+    <img src="images/visãoaerea.png" class="gallery-img" data-index="8">
+    <img src="images/evento.jpeg" class="gallery-img" data-index="9">
+    <img src="images/cascata.jpeg" class="gallery-img" data-index="10">
+    <img src="images/estrutura.jpeg" class="gallery-img" data-index="11">
   </div>
 </section>
 
@@ -87,8 +98,7 @@
 </div>
 
 <!-- ================= IDEAL PARA ================= -->
-<section class="audience reveal">
-
+<section id="ideal" class="audience reveal">
   <div class="audience-container">
     
     <!-- TEXTO -->
@@ -106,7 +116,7 @@
     <!-- VÍDEO -->
     <div class="audience-video">
       <video controls muted playsinline>
-        <source src="video.mp4" type="video/mp4">
+        <source src="videos/video.mp4" type="video/mp4">
         Seu navegador não suporta vídeo.
       </video>
     </div>
@@ -115,7 +125,7 @@
 </section>
 
 <!-- ================= COMO FUNCIONA ================= -->
-<section class="about reveal">
+<section id="como-funciona" class="about reveal">
   <h2>COMO FUNCIONA A LOCAÇÃO</h2>
   <p>A locação do Espaço Império é feita mediante disponibilidade de data.<br> 
     Entre em contato, consulte valores e garanta sua reserva.</p>
@@ -123,7 +133,7 @@
 </section>
 
 <!-- ================= FAQ ================= -->
-<section class="faq reveal">
+<section id="faq" class="faq reveal">
   <h2>Perguntas Frequentes</h2>
 
   <div class="faq-item">
@@ -183,7 +193,7 @@
 </section>
 
 <!-- ================= SIMULADOR ================= -->
-<section class="simulator reveal">
+<section id="simulador" class="simulator reveal">
   <h2>SIMULADOR DE EVENTO</h2>
   <p>Descubra se o Espaço Império é perfeito para o seu evento!</p>
 
@@ -216,7 +226,7 @@
 </section>
 
 <!-- ================= CONTATO ================= -->
-<section class="contact reveal">
+<section id="contato" class="contact reveal">
   <h2>ENTRE EM CONTATO</h2>
   <p>Garanta sua data e venha realizar seu evento no Espaço Império.</p>
   <a href="https://wa.me/5511992168849" target="_blank" class="btn">
@@ -234,7 +244,4 @@
   <br>
   <p>© Espaço Império - Todos os direitos reservados</p>
 </footer>
-
-
-
 

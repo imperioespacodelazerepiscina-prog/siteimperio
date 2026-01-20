@@ -1,5 +1,8 @@
 /* ================= RESET ================= */
 * { margin:0; padding:0; box-sizing:border-box; }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --dourado: #eacb2f;
@@ -383,6 +386,30 @@ body.dark h2::after {
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* ===== MENU TOPO ===== */
+.menu {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--texto);
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--dourado);
+}
+
+/* Modo escuro */
+body.dark .menu a {
+  color: #eee;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .audience-container {
@@ -398,42 +425,107 @@ body.dark h2::after {
     margin: 10px auto 0;
   }
 }
+/* ================= RESPONSIVO MOBILE ================= */
+@media (max-width: 768px) {
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 16px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 32px;
+  /* HEADER + MENU */
+  .header {
+    flex-direction: column;
+    padding: 20px 15px;
   }
 
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
+  .logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* SEÇÕES */
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  /* GALERIA */
+  .grid img {
+    height: 200px;
+  }
+
+  /* IDEAL PARA */
+  .audience-container {
+    gap: 40px;
+  }
+
+  .audience-text {
+    text-align: center;
+  }
+
+  .audience-text ul {
+    padding-left: 0;
+  }
+
+  .audience-text li {
+    font-size: 16px;
+  }
+
+  /* SIMULADOR */
+  .simulator-box {
+    padding: 20px;
+  }
+
+  .simulator label {
+    font-size: 15px;
+  }
+
+  .simulator button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  /* BOTÕES */
+  .btn {
+    padding: 14px 30px;
+    font-size: 16px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
+/* CELULARES MUITO PEQUENOS */
+@media (max-width: 480px) {
+  .grid img {
+    height: 160px;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
